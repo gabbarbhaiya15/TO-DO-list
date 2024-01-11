@@ -23,14 +23,14 @@ function clicked() {
 
    const  Edit = async() => {
     console.log("yes");
- await axios.put(`http://localhost:5000/update/${id}`,{input})
+ await axios.put(`https://todo-backend-ltge.onrender.com/update/${id}`,{input})
  .then((response) =>{console.log("connect")})
  .catch((error) => {console.log(error)});
    }
 
  const Removetask = async() => {
 console.log("call ho rha hein");
-  await axios.delete(`http://localhost:5000/remove/${id}`)
+  await axios.delete(`https://todo-backend-ltge.onrender.com/remove/${id}`)
     .then((res)=>{console.log("connected")
     setupdate((prevdata)=>!prevdata);
 
