@@ -13,7 +13,7 @@ app.use(cors());
 
 
 // mongoose  connecttion
- mongoose.connect('mongodb://127.0.0.1:27017/taskbar',{
+ mongoose.connect('mongodb+srv://gabbarbhaiya:Shubham123@gabbarbhaiya.2lvenhx.mongodb.net/taskbar',{
 
 useNewUrlParser: true,
 useUnifiedTopology: true,
