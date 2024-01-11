@@ -21,6 +21,9 @@ useUnifiedTopology: true,
 .then(()=>{console.log('connect')})
 .catch((err)=>{console.log(err)}) ;
 
+
+
+
 const TaskSchema =  new mongoose.Schema({
   input: {
    type: String,
@@ -28,6 +31,12 @@ const TaskSchema =  new mongoose.Schema({
   },
 });
  const Taskmodel = mongoose.model('task1', TaskSchema);
+
+app.get("/",(req,res) =>{
+res.setHeader("Access-Control-Allow-Credentials","true");
+  res.send("api is running");
+
+});
  
 app.post('/task',async (req,res)=> {
   await Taskmodel.create(req.body)
