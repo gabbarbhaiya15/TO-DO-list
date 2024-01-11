@@ -12,13 +12,13 @@ const [input,setinput] = useState("");
 const [update,setupdate] = useState(false)
 const [Updatemode,setUpdatemode] = useState(null)
 useEffect( ()=> {
-    axios.get('http://localhost:5000/task1')
+    axios.get('https://todo-backend-ltge.onrender.com/task1')
     .then((res)=>{console.log(res);
      settask(res.data);
     })
 },[update]);
 const storedata = async (e) =>{
-    axios.post('http://localhost:5000/task',{input})
+    axios.post('https://todo-backend-ltge.onrender.com/task',{input})
     .then((res)=>{console.log(res.data);
     setinput("");
     setupdate(prevstate => !prevstate)
