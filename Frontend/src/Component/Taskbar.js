@@ -28,7 +28,7 @@ const storedata = async (e) =>{
 
 
     return(
-        <div>
+        <div classname="Taskmanager">
               <h2 className="" id="heading"> Task Manager </h2>
             <div className="box">
               
