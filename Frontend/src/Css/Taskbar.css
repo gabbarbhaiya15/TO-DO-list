@@ -177,4 +177,15 @@ margin-top: 7vh;
   #input2{
     width: 80% !important;
   }
+  #heading{
+    margin-bottom: 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    font-size: 55px !important;
+    font-weight: 600   ;
+    font-family: googlefont !important;
+    color: white !important;
+    
+
+}
 }
