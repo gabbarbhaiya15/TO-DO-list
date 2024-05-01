@@ -50,7 +50,7 @@ padding: 2%;
 }
 .input {
   width: 58% !important;
-  height: 60% !important;
+  height: 70% !important;
 
 display: flex !important;
 justify-content: center !important;
@@ -60,7 +60,7 @@ justify-content: center !important;
   padding: 0px 10% ;
   border-radius: 10px !important;
   color: #fff;
-  font-size: 21px;
+  font-size: 15px;
   font-weight: 700;
   background-image: radial-gradient(circle, #333c3f, #2f3538, #2a2f31, #26282a, #212223);
   box-shadow: none !important;
